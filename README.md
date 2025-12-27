@@ -72,7 +72,7 @@ eggrolls-FREQ60K-MWLD
 
 Cards are sorted according to the frequency ranking of words, from most frequent to least frequent. However, each meaning of a word is treated as an individual "atomic" card, meaning that every single definition is presented separately.
 
-This approach means that even less common definitions of frequently used words may appear early in your studies due to the overall frequency of the word itself. If you encounter definitions you prefer not to study, feel free to mark them as **Easy**, or manually **suspend** or **delete** them.
+This approach means that even less common definitions of frequently used words may appear early in your studies due to the overall frequency of the word itself. If you encounter definitions you prefer not to study, feel free to mark them as **easy**, or manually **suspend** or **delete** them.
 
 ---
 
@@ -93,6 +93,7 @@ This approach means that even less common definitions of frequently used words m
 The deck content is based on Merriam-Webster's Learner's Dictionary and Wiktionary resources.
 
 - **Merriam-Webster:** Dictionary data, definitions, and audio pronunciations: © Merriam-Webster, Incorporated. All rights reserved. Merriam-Webster content is **NOT** included under this project's open-source license and must comply with Merriam-Webster's Dictionary API Terms of Service and Brand Guidelines. Your use must remain non-commercial, and you must maintain the Merriam-Webster logo visibly in any derivative use.
+
 - **Wiktionary (Kaikki.org):** Supplementary IPA and audio data are derived from Wiktionary via Kaikki.org and are licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
 
 ---
@@ -105,9 +106,9 @@ Special thanks to:
 
 * [Kaikki.org](https://kaikki.org/) - Wiktionary data extract used for supplementary IPA and audio
 
-* Telegram user `@KarasawaKoko` for providing the TTS audio server.
+* Telegram user `@KarasawaKoko` - for providing the TTS audio server.
 
-* [Ecattea/COCA-English-Anki-Deck](https://github.com/Ecattea/COCA-English-Anki-Deck) for structural and workflow inspiration.
+* [Ecattea/COCA-English-Anki-Deck](https://github.com/Ecattea/COCA-English-Anki-Deck) - for structural and workflow inspiration.
 
 * `@mefengl` - For supplementing missing IPA and audio.
 
