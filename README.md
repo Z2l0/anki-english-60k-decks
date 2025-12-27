@@ -16,6 +16,7 @@
 * **Vocabulary**: 60,000 high-frequency English words.
 
 * **Dictionary & Audio**: [Merriam-Webster's Learner's Dictionary](https://dictionaryapi.com/) (with native audio pronunciations)
+
   * Supplementary: [Wiktionary (via Kaikki.org)](https://kaikki.org/) used to fill gaps.
   
 * **Card Structure**: Fully atomic—each card corresponds to exactly one definition.
@@ -37,6 +38,7 @@
 * **Audio Pronunciations**
 
   * Official pronunciations provided directly from Merriam-Webster.
+
   * Missing audio files have been filled using recordings from Wiktionary (En-US).
   
 * **Translations**
