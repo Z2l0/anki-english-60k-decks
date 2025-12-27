@@ -94,6 +94,8 @@ Special thanks to:
 
 * [Merriam-Webster's Learner's Dictionary](https://dictionaryapi.com/)
 
+* [Kaikki.org](https://kaikki.org/) - Wiktionary data extract used for supplementary IPA and audio
+
 * Telegram user `@KarasawaKoko` for providing the TTS audio server.
 
 * [Ecattea/COCA-English-Anki-Deck](https://github.com/Ecattea/COCA-English-Anki-Deck) for structural and workflow inspiration.
