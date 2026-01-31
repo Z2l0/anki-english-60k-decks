@@ -14,7 +14,8 @@
 
   <!-- Pronunciation and Audio -->
   <section class="pronunciation-audio">
-    <span class="pronunciation">/{{IPA}}/</span>
+    {{#IPA}}<span class="pronunciation">/{{IPA}}/</span>{{/IPA}}
+    
     {{#Audio}}
     <span class="audio-button" onclick="new Audio('{{Audio}}').play();">
       <svg width="100%" height="100%" viewBox="0 0 24 24">
@@ -178,7 +179,8 @@
 
   <!-- Pronunciation and Audio -->
   <section class="pronunciation-audio">
-    <span class="pronunciation">/{{IPA}}/</span>
+    {{#IPA}}<span class="pronunciation">/{{IPA}}/</span>{{/IPA}}
+    
     {{#Audio}}
     <span class="audio-button" onclick="new Audio('{{Audio}}').play();">
       <svg width="100%" height="100%" viewBox="0 0 24 24">
@@ -186,7 +188,6 @@
       </svg>
     </span>
     {{/Audio}}
-
 
     <button id="translateBtn" class="translate-button" title="Click to translate">
       <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -287,7 +288,7 @@
     const ttsConfig = {
       domain: [
         'https://anki-eng.0w0.live/',
-        'https://ms-ra-forwarder-for-ifreetime-pbbu.vercel.app/',
+        'https://ms-ra-forwarder-for-ifreetime-five-steel.vercel.app/',
       ],
       params: { speed: -4 }
     };

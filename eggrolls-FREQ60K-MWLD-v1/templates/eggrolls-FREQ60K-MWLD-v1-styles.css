@@ -258,7 +258,7 @@ ul, ol {
 .pronunciation {
   font-size: var(--pronunciation-size);
   color: var(--pronunciation-color);
-  font-style: italic;
+  font-style: normal;
   font-family: var(--font-serif);
 }
 
