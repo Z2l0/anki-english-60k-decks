@@ -344,10 +344,16 @@ ul, ol {
   -webkit-box-decoration-break: clone;
 }
 
-.definition-content .definition-bracket i,
-.definition-content .definition-bracket b {
+.definition-content .definition-bracket i {
   color: inherit;
   font-weight: 500;
+  font-style: italic;
+}
+
+.definition-content .definition-bracket b {
+  color: inherit;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .examples-section {
@@ -399,20 +405,30 @@ ul, ol {
   left: 0;
 }
 
-/* Default state: no special coloring for i/b tags */
-.example-item i,
-.example-item b {
+/* Default state */
+.example-item i {
   color: inherit;
   font-style: italic;
   font-weight: 500;
 }
 
+.example-item b {
+  color: inherit;
+  font-style: italic;
+  font-weight: 700;
+}
+
 /* Color highlighting only when parent has processed class */
-.example-item.processed i:not(.in-brackets),
-.example-item.processed b:not(.in-brackets) {
+.example-item.processed i:not(.in-brackets) {
   color: var(--example-highlight);
   font-style: italic;
   font-weight: 500;
+}
+
+.example-item.processed b:not(.in-brackets) {
+  color: var(--example-highlight);
+  font-style: italic;
+  font-weight: 700;
 }
 
 .example-item .example-bracket {
@@ -421,10 +437,16 @@ ul, ol {
   opacity: 0.78;
 }
 
-.example-item .example-bracket i,
-.example-item .example-bracket b {
+.example-item .example-bracket i {
   color: inherit;
   font-weight: 500;
+  font-style: italic;
+}
+
+.example-item .example-bracket b {
+  color: inherit;
+  font-weight: 700;
+  font-style: italic;
 }
 
 .example-audio {
