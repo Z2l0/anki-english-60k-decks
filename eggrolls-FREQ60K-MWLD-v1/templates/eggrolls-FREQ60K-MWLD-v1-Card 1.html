@@ -382,20 +382,27 @@
   }
 
   function markTagsInBrackets() {
-    const exampleItems = document.querySelectorAll('article.card .examples-section .example-item');
+    const exampleItems = document.querySelectorAll('article.card .examples-section .example-sentence .example-item');
+    const markTagsInSegment = (segmentHTML) => {
+      return segmentHTML.replace(/<(i|b)(\s[^>]*)?>([^<]*)<\/(i|b)>/g, (tagMatch, tag1, attrs, content, tag2) => {
+        const hasClass = attrs && attrs.includes('class=');
+        if (hasClass) {
+          return tagMatch.replace(/class="([^"]*)"/, 'class="$1 in-brackets"');
+        }
+        const attributePart = attrs || '';
+        return `<${tag1}${attributePart} class="in-brackets">${content}</${tag2}>`;
+      });
+    };
+
     exampleItems.forEach(item => {
+      if (item.dataset.bracketsProcessed === 'true') return;
+
       const html = item.innerHTML;
-      
-      const updatedHTML = html.replace(/(\([^)]*\)|\[[^\]]*\])/g, (match) => {
-        return match.replace(/<(i|b)(\s[^>]*)?>([^<]*)<\/(i|b)>/g, (tagMatch, tag1, attrs, content, tag2) => {
-          const hasClass = attrs && attrs.includes('class=');
-          if (hasClass) {
-            return tagMatch.replace(/class="([^"]*)"/, 'class="$1 in-brackets"');
-          } else {
-            const attributePart = attrs || '';
-            return `<${tag1}${attributePart} class="in-brackets">${content}</${tag2}>`;
-          }
-        });
+      let updatedHTML = html.replace(/\[[^\]]*\]/g, (match) => {
+        return `<span class="example-bracket">${markTagsInSegment(match)}</span>`;
+      });
+      updatedHTML = updatedHTML.replace(/\([^)]*\)/g, (match) => {
+        return markTagsInSegment(match);
       });
       
       if (html !== updatedHTML) {
@@ -403,12 +410,30 @@
       }
       
       item.classList.add('processed');
+      item.dataset.bracketsProcessed = 'true';
     });
+  }
+
+  function markDefinitionBrackets() {
+    const defContent = document.querySelector('article.card .definition-content');
+    if (!defContent || defContent.dataset.bracketsProcessed === 'true') return;
+
+    const html = defContent.innerHTML;
+    const updatedHTML = html.replace(/\[[^\]]*\]/g, (match) => {
+      return `<span class="definition-bracket">${match}</span>`;
+    });
+
+    if (html !== updatedHTML) {
+      defContent.innerHTML = updatedHTML;
+    }
+
+    defContent.dataset.bracketsProcessed = 'true';
   }
 
   function initializePage() {
     setExampleTTS();
     markTagsInBrackets();
+    markDefinitionBrackets();
     const btn = document.getElementById('translateBtn');
     if (btn) {
       btn.removeEventListener('click', translateContent);

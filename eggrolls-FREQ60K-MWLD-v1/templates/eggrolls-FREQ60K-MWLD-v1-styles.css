@@ -18,6 +18,8 @@
   --audio-color: #4b5563;
   --audio-hover-color: #1f2937;
   --definition-color: #374151;
+  --definition-bracket-color: #64748b;
+  --definition-bracket-bg: transparent;
   --example-color: #4b5563;
   --example-highlight: #3b82f6;
   --grammar-color: #14B8A6;
@@ -327,6 +329,27 @@ ul, ol {
   line-height: var(--line-height-relaxed);
 }
 
+.definition-content .definition-bracket {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  background: var(--definition-bracket-bg);
+  color: var(--definition-bracket-color);
+  font-size: 0.92em;
+  line-height: inherit;
+  vertical-align: inherit;
+  opacity: 0.78;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.definition-content .definition-bracket i,
+.definition-content .definition-bracket b {
+  color: inherit;
+  font-weight: 500;
+}
+
 .examples-section {
   margin-bottom: var(--spacing-base);
 }
@@ -389,6 +412,18 @@ ul, ol {
 .example-item.processed b:not(.in-brackets) {
   color: var(--example-highlight);
   font-style: italic;
+  font-weight: 500;
+}
+
+.example-item .example-bracket {
+  color: var(--definition-bracket-color);
+  font-size: 0.92em;
+  opacity: 0.78;
+}
+
+.example-item .example-bracket i,
+.example-item .example-bracket b {
+  color: inherit;
   font-weight: 500;
 }
 
@@ -546,6 +581,8 @@ ul, ol {
   --audio-color: #d1d5db;
   --audio-hover-color: #f3f4f6;
   --definition-color: #e5e7eb;
+  --definition-bracket-color: #94a3b8;
+  --definition-bracket-bg: transparent;
   --example-color: #d1d5db;
   --example-highlight: #60a5fa;
   --grammar-color: #34d399;
