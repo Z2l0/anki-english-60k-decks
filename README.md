@@ -72,9 +72,11 @@ eggrolls-FREQ60K-MWLD
 
 ## ⚛️ About Atomic Cards
 
-Cards are sorted according to the frequency ranking of words, from most frequent to least frequent. However, each meaning of a word is treated as an individual "atomic" card, meaning that every single definition is presented separately.
+Cards are ordered by **word frequency**, but each definition is split into its own **atomic card**.  
+As a result, high-frequency words may surface multiple cards early, including less common meanings.
 
-This approach means that even less common definitions of frequently used words may appear early in your studies due to the overall frequency of the word itself. If you encounter definitions you prefer not to study, feel free to mark them as **easy**, or manually **suspend** or **delete** them.
+To make this easier to manage, words with two or more definition cards are labeled with sense-priority tags: `core`, `extend`, and `rare`, so you can focus on the most useful meanings first.  
+If a card is not relevant to your goals, feel free to **suspend** or **delete** it.
 
 ---
 
