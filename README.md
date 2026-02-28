@@ -72,11 +72,13 @@ eggrolls-FREQ60K-MWLD
 
 ## ⚛️ About Atomic Cards
 
-Cards are ordered by **word frequency**, but each definition is split into its own **atomic card**.  
-As a result, high-frequency words may surface multiple cards early, including less common meanings.
+* Cards are ordered by **word frequency**, but each definition is split into its own **atomic card**.
 
-To make this easier to manage, words with two or more definition cards are labeled with sense-priority tags: `core`, `extend`, and `rare`, so you can focus on the most useful meanings first.  
-If a card is not relevant to your goals, feel free to **suspend** or **delete** it.
+  As a result, high-frequency words may surface multiple cards early, including less common meanings.
+
+* To make this easier to manage, words with two or more definition cards are labeled with sense-priority tags: `core`, `extend`, and `rare`, so you can focus on the most useful meanings first.
+
+* If a card is not relevant to your goals, feel free to **suspend** or **delete** it.
 
 ---
 
