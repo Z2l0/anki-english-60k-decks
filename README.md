@@ -33,7 +33,7 @@
 
 * **Clean & Focused Design**
 
-  ![Card Preview](https://pub-90b0b2afa26447b8b824c3d05d8e274f.r2.dev/uPic/2025080344EwEs.png)
+  ![Card Preview](https://pub-90b0b2afa26447b8b824c3d05d8e274f.r2.dev/uPic/20260319vgLPzn.png)
 
 * **Audio Pronunciations**
 
@@ -48,6 +48,10 @@
 * **Example Sentence TTS**
 
   Click the ▶️ icon to hear example sentences synthesized via online TTS.
+
+* **Random Front Example**
+
+  The front side displays one randomly selected example sentence from the available examples for the current card.
 
 * **Instant Dictionary Access**
 
@@ -121,4 +125,3 @@ Special thanks to:
 ---
 
 **Happy learning! 📚**
-
